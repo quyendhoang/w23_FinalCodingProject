@@ -1,0 +1,377 @@
+#skip{
+    color: #bee7e8;
+    position: absolute;
+    top: -200px;
+    left: -400px;
+    transition: left 1s ease-out;
+    transform: translateY(0%);
+    z-index: 1;
+}
+#skip:focus{ 
+   color: #ffffff;
+   position: absolute;
+   top: 9px;
+   left: 10px;
+   transform: translateY(0%);
+}
+
+h1{
+    color: #ffffff;
+    font-family:  "EB Garamond", 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 1px;
+}
+
+#intro h2{
+    color: #ffffff;
+    font-family:  Lucida Console, Courier New;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+#intro p{
+    padding-bottom: 50px;
+}
+
+.front{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 40px;
+    row-gap: 10px;
+}
+
+#full img{
+    display: block;
+    position: center;
+    width: 100%;
+    border-image: url("../images/script_transparent.png") 30% round;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 2px;
+    border: 10px outset #ffffff;
+}
+
+img{
+    display: block;
+    width: 300px;
+    border: solid rgba(255, 255, 255, 0.296) 1px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 2px;
+}
+
+.profile:hover{
+    background: #0d2620;
+}
+
+/* img #intro{
+    display: block;
+    position: center;
+} */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 40px;
+    row-gap: 10px;
+}
+
+/* .container .roster{
+    display: grid;
+    width: auto;
+    margin: auto;
+    grid-template-columns: 1vh 1vh 1vh;
+    border-radius: 35px;
+    row-gap: 10vh;
+    column-gap: 40vh
+} */
+
+.roster h2{
+    color: #ffffff;
+    font-family:  Lucida Console, Courier New;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+.card-games h2{
+    padding-bottom: 40px;
+}
+.Rtitle{
+    padding-bottom: 40px;
+}
+.bout h1{
+    padding-bottom: 40px;
+}
+
+body{
+	padding: 10px;
+    margin:  30px;
+	background-color: #18453B;
+	font-size: auto;
+    font-family:  Arial, Helvetica, sans-serif
+}
+
+header{
+    padding: 8px 15px 3px 30px;
+}
+
+nav ul{ 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li:hover, nav .current a:hover, nav a:hover{
+    background: #568603;
+    transition: width 2s;
+}
+
+
+nav .current,nav .current a{
+    background: #7dc400;
+    color: #000000;
+}
+
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    padding: 15px;
+    text-align: center;
+    font-size: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    justify-content:center;
+}
+
+a{
+    color:#000000;
+}
+
+a:link, a:visited{
+    color: white;
+    text-decoration: none;
+    font-family: Lucida Console, Courier New;;
+}
+
+.profile ul li{
+    color: #ffffff;
+    font-family:  Lucida Console, Courier New;
+    font-size: 25px;
+    text-align: center;
+    padding: 2px;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* border: 20px double #ffffff73; */
+    border: 10px outset #ffffff;
+    padding: 15px;
+    padding-right: 30px;
+}
+
+.notes{
+    font-family:  Lucida Console, Courier New;
+    font-size: 13px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#full{
+    padding: 30px;
+}
+
+.card-games {
+    color: #ffffff;
+    font-family:  Lucida Console, Courier New;
+    font-size: 25px;
+    text-align: center;
+    padding: 2vh;
+}
+
+.card-games p{
+    background-color: #0d2620;
+    color: #ffffff;
+    padding: 2vh;
+    border: 10px outset #ffffff;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid #f1f1f1; */
+    border: 5px outset #ffffffd7;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #000000;
+    color: white;
+    padding: 70px 0;
+  }
+  
+  /* Style the back side */
+.flip-card-back {
+    background-color: #ffffff;
+    color: black;
+    padding: 70px 0;
+    transform: rotateY(180deg);
+}
+
+.win{
+    background-color: #7dc400;
+}
+
+.loss{
+    background-color: #db2323;
+
+}
+
+.card-games ul li{
+    line-height: 1.2;
+}
+
+#venue{
+    font-size: 18px;
+    font-style: italic;
+}
+
+#date{
+    font-weight: bold;
+}
+
+#full p{
+    color: #ffffff;
+    font-family:  Lucida Console, Courier New;
+    font-size: 25px;
+    text-align: center;
+}
+
+.bout p{
+    color: #ffffff;
+    font-family:  Lucida Console, Courier New;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+}
+.bout a{
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+}
+#bout{
+   border: 10px outset #ffffff;
+   background-color: #0d2620;
+}
+
+#myBtnContainer{
+    display: block;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+    /* float: left; */
+    /* background-color: #2196F3; */
+    color: #ffffff;
+    /* width: 100px; */
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+}
+  
+.show {
+    display: block;
+}
+  
+.container {
+    margin-top: 20px;
+    overflow: hidden;
+}
+  
+  /* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    font-family: Lucida Console, Courier New;
+    cursor: pointer;
+}
+  
+.btn:hover {
+    background-color: #568603;
+}
+  
+.btn.active {
+    background-color: #000000;
+    color: #7dc400;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .roster, .games{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    }
+
+    .front{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 10px;
+    }
+}
+@media screen and (min-width: 992px){
+    .roster, .games{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    }
+
+    .front{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 10px;
+    }
+}

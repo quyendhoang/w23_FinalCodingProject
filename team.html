@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond"> 
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Michigan State Men's Basketball 2022-23 Recap</title>
+</head>
+
+<body>
+<a id="skip" href="#main">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html">Main</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li class = "current"><a href="team.html">Team Roster</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+    <main class = "container" id = "main">
+    <div class ="Rtitle">
+        <h1>Roster</h1>  
+    </div>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+
+        <button class="btn" onclick="filterSelection('G')">Guard</button>
+        <button class="btn" onclick="filterSelection('C')">Center</button>
+        <button class="btn" onclick="filterSelection('F')">Forward</button>
+        <button class="btn" onclick="filterSelection('H')">Coach</button>
+      
+      <button class="btn" onclick="filterSelection('1')">Freshman</button>
+      <button class="btn" onclick="filterSelection('2')">Sophomore</button>
+      <button class="btn" onclick="filterSelection('3')">Junior</button>
+      <button class="btn" onclick="filterSelection('4')">Senior</button>
+      <button class="btn" onclick="filterSelection('5')">Graduate Student</button>
+    </div>
+      
+    
+    <div class="container roster">
+       
+    <div class="filterDiv 1 F profile">
+        <h2>Jaxon Kohler</h2>
+        <img src="images/jaxon.jpg" alt="Headshot of Jaxon Kohler">
+        <ul>
+            <li>0</li>
+            <li>Forward</li>
+            <li>Freshman</li>
+          </ul>
+
+    </div>
+
+    <div class="filterDiv 2 G profile">
+        <h2>Pierre Brooks II</h2>
+        <img src="images/pierre.jpg" alt="Headshot of Pierre Brooks II">
+        <p>
+        <ul>
+            <li class="number">1</li>
+            <li>Guard</li>
+            <li>Sophomore</li>
+          </ul>
+        </p>
+    </div>
+
+    <div class="filterDiv 4 G profile">
+       <h2>Tyson Walker</h2>
+        <img src="images/tyson.jpg" width="200" alt="Headshot of Tyson Walker">
+        <p>
+        <ul>
+            <li class="number">2</li>
+            <li class="position">Guard</li>
+            <li class="year">Senior</li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="filterDiv 2 G profile">
+        <h2>Jaden Akins</h2>
+        <img src="images/jaden.jpg" width="200" alt="Headshot of Jaden Akins">
+        <p>
+        <ul>
+            <li class="number">3</li>
+            <li class="position">Guard</li>
+            <li class="year">Sophomore</li>
+        </ul>
+        </p>
+    </div>
+
+        
+    <div class="filterDiv 1 G profile">
+        <h2>Tre Holloman</h2>
+        <img src="images/tre.jpg" width="200" alt="Headshot of Tre Holloman">
+        <p>
+        <ul>
+            <li class="number">5</li>
+            <li class="position">Guard</li>
+            <li class="year">Freshman</li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="filterDiv 5 F profile">
+        <h2>Joey Hauser</h2>
+        <img src="images/joey.jpg" width="200" alt="Headshot of Joey Hauser">
+        <p>
+        <ul>
+            <li class="number">10</li>
+            <li class="position">Forward</li>
+            <li class="year">Graduate Student</li>
+        </ul>
+        </p>
+    </div>
+    
+    <div class="filterDiv 3 G profile">
+        <h2>A.J. Hoggard</h2>
+        <img src="images/aj.jpg" width="200" alt="Headshot of A.J. Hoggard">
+        <p>
+        <ul>
+            <li class="number">11</li>
+            <li class="position">Guard</li>
+            <li class="year">Junior</li>
+        </ul>
+        </p>
+    </div>
+    
+    <div class="filterDiv 4 G profile">
+        <h2>Steven Izzo</h2>
+        <img src="images/steven.jpg" width="200" alt="Headshot of Steven Izzo">
+        <p>
+        <ul>
+            <li class="number">13</li>
+            <li class="position">Guard</li>
+            <li class="year">Senior</li>
+        </ul>
+        </p>
+    </div>
+
+        
+    <div class="filterDiv 4 G profile">
+        <h2>Davis Smith</h2>
+        <img src="images/davis.jpg" width="200" alt="Headshot of Steven Izzo">
+        <p>
+        <ul>
+            <li class="number">14</li>
+            <li class="position">Guard</li>
+            <li class="year">Senior</li>
+        </ul>
+        </p>
+    </div>
+   
+    <div class="filterDiv 1 C profile">
+        <h2>Carson Cooper</h2>
+        <img src="images/carson.jpg" width="200" alt="Headshot of Carson Cooper">
+        <p>
+        <ul>
+            <li class="number">15</li>
+            <li class="position">Center</li>
+            <li class="year">Freshman</li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="filterDiv 1 G profile">
+        <h2>Nick Sanders</h2>
+        <img src="images/nick.jpg" width="200" alt="Headshot of Nick Sanders">
+        <p>
+        <ul>
+            <li class="number">20</li>
+            <li class="position">Guard</li>
+            <li class="year">Freshman</li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="filterDiv 3 C profile">
+        <h2>Mady Sissoko</h2>
+        <img src="images/mady.jpg" width="200" alt="Headshot of Mady Sissoko">
+        <p>
+        <ul>
+            <li class="number">22</li>
+            <li class="position">Center</li>
+            <li class="year">Junior</li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="filterDiv 4 F profile">
+        <h2>Malik Hall</h2>
+        <img src="images/malik.jpg" width="200" alt="Headshot of Malik Hall">
+        <p>
+        <ul>
+            <li class="number">25</li>
+            <li class="position">Forward</li>
+            <li class="year">Senior</li>
+        </ul>
+        </p>
+    </div>
+    
+    <div class="filterDiv 4 G profile">
+        <h2>Jason Whitens</h2>
+        <img src="images/jason.jpg" width="200" alt="Headshot of Jason Whitens">
+        <p>
+        <ul>
+            <li class="number">43</li>
+            <li class="position">Guard</li>
+            <li class="year">Senior</li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="filterDiv H profile">
+        <h2>Tom Izzo</h2>
+        <img src="images/izzo.jpg" width="200" alt="Headshot of Tom Izzo">
+        <p>
+        <ul>
+            <li class="position">Head Coach</li>
+            <li class="year">1995-present</li>
+        </ul>
+        </p>
+    </div>
+    </div>
+    
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
